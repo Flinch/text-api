@@ -2,7 +2,7 @@ export const nodejs = `const axios = require("axios");
 
 const options = {
     method: 'POST',
-    url: 'https://similarityapi.com/api/v1/texthub',
+    url: 'https://text-hub.vercel.app/api/v1/comparison',
     data: {
       text1: 'First text',
       text2: 'Second text'
