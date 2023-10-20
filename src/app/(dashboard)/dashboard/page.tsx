@@ -7,7 +7,7 @@ import { db } from "@/lib/db";
 import RequestAPIKey from "@/components/RequestAPIKey";
 import APIDashboard from "@/components/APIDashboard";
 
-export const Metatdata: Metadata = {
+export const metadata: Metadata = {
   title: "TextHub | Dashboard",
   description: "Dashbaord page for TextHub. ",
 };
