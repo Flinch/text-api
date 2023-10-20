@@ -4,10 +4,9 @@ import { getToken } from "next-auth/jwt";
 import { withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
-export const redis = Redis.fromEnv();
-
 export default withAuth(
   async function middleware(req) {
+    const redis = Redis.fromEnv();
     const pathname = req.nextUrl.pathname;
     const ratelimit = new Ratelimit({
       redis,
